@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Intro to CSS Animations</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,76 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <h2>Intro to CSS Animations</h2>
+          <p>presented by: Erle Mulligan</p>
+        </section>
+        <section>
+          <section><h2>CSS Transitions</h2></section>
+          <section>
+            <h3>Transition CSS Properties</h3>
+            <ul style="text-align: left;">
+              <li>transition-property: [css property name goes goes here... color, width, opacity, etc...];</li>
+              <li>transition-duration: [time of transition animation in seconds or milliseconds... 10s, 500ms, etc...];</li>
+              <li>transition-timing-function: [animation easing function... ease-in-out, ease-out, linear, etc...];</li>
+              <li>transition-delay: [time to delay before animation begins in seconds or milliseconds];</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Transition Shorthand Property</h3>
+            <ul>
+              <li>transition: [transition-property], [transition-duration], [transition-timing-function], [transition-delay];</li>
+              <li>Example:<br />transition: background-color, 1s, ease-in-out, 500ms;</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Chaining Transitions in Steps</h3>
+            <ul style="text-align: left;">
+              <li>transition-property: background-color, width, left, border-radius;</li>
+              <li>transition-duration: 1s, 500ms, 0.2s, 250ms;</li>
+              <li>transition-timing-function: ease-in, ease-out, linear, ease-in-out;</li>
+              <li>transition-delay: 0.2s, 250ms, 0.1s, 100ms;</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Shorthand: Chaining Transitions in Steps</h3>
+            <ul style="text-align: left;">
+              <li>transition: background-color 1s ease-in 0.2s,<br />
+              width 500ms ease-out 250ms,<br />
+              left 250ms ease-in-out 0.2s,<br />
+              border-radius 400ms ease-in 0.1s;</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Tools / Resources</h3>
+            <ul>
+              <li>Using CSS Transitions<br />
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions</a></li>
+              <li>Easing Tool<br />
+              <a href="https://matthewlein.com/ceaser/" target="_blank">https://matthewlein.com/ceaser/</a></li>
+              <li>List of CSS Properties that can be Animated:<br />
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties</a></li>
+              <li>Using Multi-step Animations and Transitions<br />
+              <a href="https://css-tricks.com/using-multi-step-animations-transitions/" target="_blank">https://css-tricks.com/using-multi-step-animations-transitions/</a></li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><h2>CSS Keyframes Animation</h2></section>
+          <section>
+            <h3>Tools / Resources</h3>
+            <ul>
+              <li>Using CSS Animations<br />
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations</a></li>
+              <li>Animate.css Animation Library<br />
+              <a href="https://daneden.github.io/animate.css/" target="_blank">https://daneden.github.io/animate.css/</a></li>
+              <li>CSS Animation with Sprite Sheet<br />
+              <a href="http://blog.teamtreehouse.com/css-sprite-sheet-animations-steps" target="_blank">http://blog.teamtreehouse.com/css-sprite-sheet-animations-steps</a></li>
+              <li>Animating Sprites in CSS with Texture Packer (sprite creation tool)<br />
+              <a href="https://www.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker">https://www.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker</a></li>
+            </ul>
+          </section>
+        </section>
 			</div>
 		</div>
 
